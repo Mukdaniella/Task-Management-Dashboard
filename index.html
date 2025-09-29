@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management Dashboard</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body class="bg-gray-50 min-h-screen p-4">
@@ -35,11 +33,9 @@
                 </div>
                 <div class="flex gap-2 flex-wrap">
                     <button type="submit"
-                        class="px-4 py-2 bg-blue-600 text-white rounded  hover:bg-blue-900 transition text-sm sm:text-base w-full sm:w-auto">Add
-                        Task</button>
+                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition text-sm sm:text-base w-full sm:w-auto">Add Task</button>
                     <button id="clear-storage" type="button"
-                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition text-sm sm:text-base w-full sm:w-auto">Clear
-                        Saved</button>
+                        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900 transition text-sm sm:text-base w-full sm:w-auto">Clear Saved</button>
                 </div>
             </form>
 
@@ -48,14 +44,14 @@
                 <button id="filter-all"
                     class="filter-btn px-3 py-1 rounded bg-gray-100 text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">All</button>
                 <button id="filter-pending"
-                    class="filter-btn px-3 py-1 rounded bg-gray-100  text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">Pending</button>
+                    class="filter-btn px-3 py-1 rounded bg-gray-100 text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">Pending</button>
                 <button id="filter-completed"
                     class="filter-btn px-3 py-1 rounded bg-gray-100 text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">Completed</button>
                 <button id="sort-btn"
-                    class="px-3 py-1 rounded bg-gray-100 text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">Sort:
-                    Date </button>
+                    class="px-3 py-1 rounded bg-gray-100 text-sm hover:bg-gray-600 sm:text-base flex-1 sm:flex-auto">Sort: Date</button>
             </div>
         </section>
+
         <!-- Task List -->
         <section class="md:col-span-2 bg-white p-4 rounded shadow">
             <h2 class="text-lg font-semibold mb-3">Tasks</h2>
@@ -74,13 +70,12 @@
                 <input id="edit-date" type="date" class="w-full border rounded p-2" />
                 <div class="flex justify-end gap-2">
                     <button id="cancel-edit" class="px-3 py-1 rounded border">Cancel</button>
-                    <button id="save-edit" class="px-3 py-1 rounded bg-blue-600 text-white rounded hover:bg-blue-900">Save</button>
+                    <button id="save-edit" class="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-900">Save</button>
                 </div>
             </div>
         </div>
     </div>
-  
 
+<script src="app.js"></script>
 </body>
-  <script src="index.js"></script>
 </html>
